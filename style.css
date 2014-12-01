@@ -1,0 +1,17 @@
+html {
+  font-family: monospace;
+}
+
+ex-a,
+ex-b,
+ex-c,
+ex-d,
+ex-e,
+ex-f,
+ex-g,
+ex-h,
+ex-i,
+ex-j,
+ex-k {
+  display: block;
+}
