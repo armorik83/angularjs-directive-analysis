@@ -25,7 +25,7 @@ function uuidDisable() {
 (function() {
 
   function routeConfig($routeProvider, $locationProvider) {
-    var rootDir = '/angularjs-directive-analysis';
+    var rootDir = '';
     $routeProvider
       .when(rootDir + '/a-01', {templateUrl: './a-01.html'})
       .when(rootDir + '/a-02', {templateUrl: './a-02.html'})
@@ -84,9 +84,9 @@ function uuidDisable() {
       .when(rootDir + '/mixed-ghi', {templateUrl: './mixed-ghi.html'})
       //
       .when(rootDir + '/', {templateUrl: './contents.html'})
-      .otherwise({redirectTo: rootDir});
+      .otherwise({redirectTo: '/'});
     $locationProvider.html5Mode({
-      enabled: true,
+      enabled: false,
       requireBase: false
     });
   }
